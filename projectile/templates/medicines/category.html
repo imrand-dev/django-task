@@ -1,0 +1,80 @@
+{% extends '../base.html' %}
+
+{% block content %}
+
+<div class="dashboard-main-body">
+    <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-24">
+        <h6 class="fw-semibold mb-0">Medicine Category List</h6>
+
+        <a href="{% url 'add-category' %}" class="btn btn-primary text-sm btn-sm px-12 py-12 radius-8 d-flex align-items-center gap-2">
+            <iconify-icon icon="ic:baseline-plus" class="icon text-xl line-height-1"></iconify-icon>
+            Add New Category
+        </a>
+
+
+    </div>
+
+    <div class="card basic-data-table">
+        <div
+            class="card-header border-bottom bg-base py-16 px-24 d-flex align-items-center flex-wrap gap-3 justify-content-between">
+            <div class="d-flex align-items-center flex-wrap gap-3">
+                <h5 class="card-title mb-0"></h5>
+            </div>
+        </div>
+        <div class="card-body">
+            <table class="table bordered-table mb-0" id="dataTable" data-page-length='10'>
+                <thead>
+                    <tr>
+                        <th>SL No.</th>
+                        <th>Category Name</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Analgesics</td>
+                        <td>
+                            <a href="#" class="bg-warning-focus text-warning-main px-24 py-4 rounded-pill fw-medium text-sm">Edit</a>
+                            <a href="#" class="bg-danger-focus text-danger-main px-24 py-4 rounded-pill fw-medium text-sm">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Antibiotics</td>
+                        <td>
+                            <a href="#" class="bg-warning-focus text-warning-main px-24 py-4 rounded-pill fw-medium text-sm">Edit</a>
+                            <a href="#" class="bg-danger-focus text-danger-main px-24 py-4 rounded-pill fw-medium text-sm">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Antiseptics</td>
+                        <td>
+                            <a href="#" class="bg-warning-focus text-warning-main px-24 py-4 rounded-pill fw-medium text-sm">Edit</a>
+                            <a href="#" class="bg-danger-focus text-danger-main px-24 py-4 rounded-pill fw-medium text-sm">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Vitamins & Supplements</td>
+                        <td>
+                            <a href="#" class="bg-warning-focus text-warning-main px-24 py-4 rounded-pill fw-medium text-sm">Edit</a>
+                            <a href="#" class="bg-danger-focus text-danger-main px-24 py-4 rounded-pill fw-medium text-sm">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Cardiovascular Medications</td>
+                        <td>
+                            <a href="#" class="bg-warning-focus text-warning-main px-24 py-4 rounded-pill fw-medium text-sm">Edit</a>
+                            <a href="#" class="bg-danger-focus text-danger-main px-24 py-4 rounded-pill fw-medium text-sm">Delete</a>
+                        </td>
+                    </tr>
+                </tbody>
+                                    
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

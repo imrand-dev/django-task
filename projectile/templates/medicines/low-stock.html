@@ -1,0 +1,55 @@
+{% extends '../base.html' %}
+
+{% block content %}
+
+<div class="dashboard-main-body">
+    <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-24">
+        <h6 class="fw-semibold mb-0">Medicine List</h6>
+    </div>
+
+    <div class="card basic-data-table">
+        <div
+            class="card-header border-bottom bg-base py-16 px-24 d-flex align-items-center flex-wrap gap-3 justify-content-between">
+            <div class="d-flex align-items-center flex-wrap gap-3">
+                <h5 class="card-title mb-0"></h5>
+            </div>
+        </div>
+        <div class="card-body">
+            <table class="table bordered-table mb-0" id="dataTable" data-page-length='10'>
+                <thead>
+                    <tr>
+                        <th>SL No.</th>
+                        <th>Medicine Name</th>
+                        <th>Category</th>
+                        <th>Unit Price</th>
+                        <th>Pack Size</th>
+                        <th>Total Pack</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Aspirin</td>
+                        <td>Analgesics</td>
+                        <td>$7.50</td>
+                        <td>300mg</td>
+                        <td>0</td>
+                    </tr>
+                
+                    <tr>
+                        <td>2</td>
+                        <td>Ibuprofen</td>
+                        <td>Analgesics</td>
+                        <td>$8.00</td>
+                        <td>400mg</td>
+                        <td>10</td>
+                    </tr>
+                </tbody>                        
+                                    
+            </table>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

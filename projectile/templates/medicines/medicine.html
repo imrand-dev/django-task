@@ -1,0 +1,114 @@
+{% extends '../base.html' %}
+
+{% block content %}
+    
+<div class="dashboard-main-body">
+    <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-24">
+        <h6 class="fw-semibold mb-0">Medicine List</h6>
+
+        <a href="{% url 'add-medicine' %}" class="btn btn-primary text-sm btn-sm px-12 py-12 radius-8 d-flex align-items-center gap-2">
+            <iconify-icon icon="ic:baseline-plus" class="icon text-xl line-height-1"></iconify-icon>
+            Add New Medicine
+        </a>
+    </div>
+
+    <div class="card basic-data-table">
+        <div
+            class="card-header border-bottom bg-base py-16 px-24 d-flex align-items-center flex-wrap gap-3 justify-content-between">
+            <div class="d-flex align-items-center flex-wrap gap-3">
+                <h5 class="card-title mb-0"></h5>
+            </div>
+        </div>
+        <div class="card-body">
+            <table class="table bordered-table mb-0" id="dataTable" data-page-length='10'>
+                <thead>
+                    <tr>
+                        <th>SL No.</th>
+                        <th>Medicine Name</th>
+                        <th>Brand Name</th>
+                        <th>Category</th>
+                        <th>Unit Price</th>
+                        <th>Pack Size</th>
+                        <th>Total Pack</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Paracetamol</td>
+                        <td>Panadol</td>
+                        <td>Analgesics</td>
+                        <td>$5.00</td>
+                        <td>500mg</td>
+                        <td>100</td>
+                        <td><span class="bg-success-focus text-success-main px-24 py-4 rounded-pill fw-medium text-sm">Available</span></td>
+                        <td>
+                            <a href="#" class="bg-warning-focus text-warning-main px-24 py-4 rounded-pill fw-medium text-sm">Edit</a>
+                            <a href="#" class="bg-danger-focus text-danger-main px-24 py-4 rounded-pill fw-medium text-sm">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Aspirin</td>
+                        <td>Bayer</td>
+                        <td>Analgesics</td>
+                        <td>$7.50</td>
+                        <td>300mg</td>
+                        <td>0</td>
+                        <td><span class="bg-danger-focus text-danger-main px-24 py-4 rounded-pill fw-medium text-sm">Out of Stock</span></td>
+                        <td>
+                            <a href="#" class="bg-warning-focus text-warning-main px-24 py-4 rounded-pill fw-medium text-sm">Edit</a>
+                            <a href="#" class="bg-danger-focus text-danger-main px-24 py-4 rounded-pill fw-medium text-sm">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Amoxicillin</td>
+                        <td>Amoxil</td>
+                        <td>Antibiotics</td>
+                        <td>$10.00</td>
+                        <td>250mg</td>
+                        <td>200</td>
+                        <td><span class="bg-success-focus text-success-main px-24 py-4 rounded-pill fw-medium text-sm">Available</span></td>
+                        <td>
+                            <a href="#" class="bg-warning-focus text-warning-main px-24 py-4 rounded-pill fw-medium text-sm">Edit</a>
+                            <a href="#" class="bg-danger-focus text-danger-main px-24 py-4 rounded-pill fw-medium text-sm">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Ibuprofen</td>
+                        <td>Advil</td>
+                        <td>Analgesics</td>
+                        <td>$8.00</td>
+                        <td>400mg</td>
+                        <td>10</td>
+                        <td><span class="bg-warning-focus text-warning-main px-24 py-4 rounded-pill fw-medium text-sm">Low Stock</span></td>
+                        <td>
+                            <a href="#" class="bg-warning-focus text-warning-main px-24 py-4 rounded-pill fw-medium text-sm">Edit</a>
+                            <a href="#" class="bg-danger-focus text-danger-main px-24 py-4 rounded-pill fw-medium text-sm">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Loratadine</td>
+                        <td>Claritin</td>
+                        <td>Antihistamines</td>
+                        <td>$12.00</td>
+                        <td>10mg</td>
+                        <td>80</td>
+                        <td><span class="bg-success-focus text-success-main px-24 py-4 rounded-pill fw-medium text-sm">Available</span></td>
+                        <td>
+                            <a href="#" class="bg-warning-focus text-warning-main px-24 py-4 rounded-pill fw-medium text-sm">Edit</a>
+                            <a href="#" class="bg-danger-focus text-danger-main px-24 py-4 rounded-pill fw-medium text-sm">Delete</a>
+                        </td>
+                    </tr>
+                </tbody>                                   
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

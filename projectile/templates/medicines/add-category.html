@@ -1,0 +1,45 @@
+{% extends '../base.html' %}
+
+
+{% block content %}
+<div class="dashboard-main-body">
+    <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-24">
+        <h6 class="fw-semibold mb-0">Add Medicine Category</h6>
+        <ul class="d-flex align-items-center gap-2">
+            <li class="fw-medium">
+                <a href="{% url 'home' %}" class="d-flex align-items-center gap-1 hover-text-primary">
+                    <iconify-icon icon="solar:home-smile-angle-outline" class="icon text-lg"></iconify-icon>
+                    Dashboard
+                </a>
+            </li>
+            <li>-</li>
+            <li class="fw-medium">Add Category</li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-title mb-0">Medicine Category</h5>
+              </div>
+              <div class="card-body">
+                <form class="row gy-3 needs-validation" novalidate>
+                  <div class="col-md-12">
+                    <label class="form-label">Category Name</label>
+                    <input type="text" name="#0" class="form-control" placeholder="Enter Medicine Cateogry Name" required>
+                  </div>
+                                           
+                  <div class="col-12">
+                    <button class="btn btn-primary-600" type="submit">Add Category</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+    </div>
+
+   
+</div>
+
+{% endblock %}

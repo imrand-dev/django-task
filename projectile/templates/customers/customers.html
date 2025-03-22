@@ -1,0 +1,91 @@
+{% extends '../base.html' %}
+
+{% block content %}
+
+<div class="dashboard-main-body">
+    <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-24">
+        <h6 class="fw-semibold mb-0">Customer List</h6>
+    </div>
+
+    <div class="card basic-data-table">
+        <div
+            class="card-header border-bottom bg-base py-16 px-24 d-flex align-items-center flex-wrap gap-3 justify-content-between">
+            <div class="d-flex align-items-center flex-wrap gap-3">
+                <h5 class="card-title mb-0"></h5>
+            </div>
+        </div>
+        <div class="card-body">
+            <table class="table bordered-table mb-0" id="dataTable" data-page-length='10'>
+                <thead>
+                    <tr>
+                        <th>SL No.</th>
+                        <th>Name</th>
+                        <th>Contact</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>(123) 456-7890</td>
+                        <td>johndoe@email.com</td>
+                        <td>Dhaka, Bangladesh</td>
+                        <td>
+                            <a href="#" class="bg-warning-focus text-warning-main px-24 py-4 rounded-pill fw-medium text-sm">Edit</a>
+                            <a href="#" class="bg-danger-focus text-danger-main px-24 py-4 rounded-pill fw-medium text-sm">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jane Smith</td>
+                        <td>(321) 654-0987</td>
+                        <td>janesmith@email.com</td>
+                        <td>Chittagong, Bangladesh</td>
+                        <td>
+                            <a href="#" class="bg-warning-focus text-warning-main px-24 py-4 rounded-pill fw-medium text-sm">Edit</a>
+                            <a href="#" class="bg-danger-focus text-danger-main px-24 py-4 rounded-pill fw-medium text-sm">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Michael Brown</td>
+                        <td>(456) 789-0123</td>
+                        <td>michaelbrown@email.com</td>
+                        <td>Rajshahi, Bangladesh</td>
+                        <td>
+                            <a href="#" class="bg-warning-focus text-warning-main px-24 py-4 rounded-pill fw-medium text-sm">Edit</a>
+                            <a href="#" class="bg-danger-focus text-danger-main px-24 py-4 rounded-pill fw-medium text-sm">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Emily Davis</td>
+                        <td>(789) 012-3456</td>
+                        <td>emilydavis@email.com</td>
+                        <td>Khulna, Bangladesh</td>
+                        <td>
+                            <a href="#" class="bg-warning-focus text-warning-main px-24 py-4 rounded-pill fw-medium text-sm">Edit</a>
+                            <a href="#" class="bg-danger-focus text-danger-main px-24 py-4 rounded-pill fw-medium text-sm">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>David Wilson</td>
+                        <td>(234) 567-8901</td>
+                        <td>davidwilson@email.com</td>
+                        <td>Barisal, Bangladesh</td>
+                        <td>
+                            <a href="#" class="bg-warning-focus text-warning-main px-24 py-4 rounded-pill fw-medium text-sm">Edit</a>
+                            <a href="#" class="bg-danger-focus text-danger-main px-24 py-4 rounded-pill fw-medium text-sm">Delete</a>
+                        </td>
+                    </tr>
+                </tbody>                        
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
